@@ -40,4 +40,22 @@ public class Spinner {
         }
         return result;
     }
+
+    //Implement method that spins provided int array n positions in-place
+    public static int[] spinArrayInPlace01(int[] array, int n) {
+
+        int arrayLength = array.length;
+        n = n % arrayLength;
+        int[] result = new int[arrayLength];
+
+        for (int i = 0; i < arrayLength; i++) {
+            if (i < n) {
+                result[i] = array[arrayLength - n + i];
+            } else {
+                result[i] = array[i - n];
+            }
+        }
+        return result;
+    }
+
 }
