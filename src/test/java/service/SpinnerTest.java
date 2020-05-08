@@ -11,7 +11,7 @@ class SpinnerTest {
         int[] input = new int[] {1,2,3,4,5};
         int[] expected = new int[] {3,4,5,1,2};
         int spin = 3;
-        int[] result = Spinner.spinArray(input, spin);
+        int[] result = Spinner.spinArrayTvv01(input, spin);
         assertArrayEquals(expected, result);
     }
     @Test
@@ -19,7 +19,7 @@ class SpinnerTest {
         int[] input = new int[] {1,2,3,4,5};
         int[] expected = new int[] {4,5,1,2,3};
         int spin = 2;
-        int[] result = Spinner.spinArray(input, spin);
+        int[] result = Spinner.spinArrayTvv01(input, spin);
         assertArrayEquals(expected, result);
     }
     @Test
@@ -27,7 +27,7 @@ class SpinnerTest {
         int[] input = new int[] {1,2,3,4,5,6,7,8,9,0};
         int[] expected = new int[] {9,0,1,2,3,4,5,6,7,8};
         int spin = 22;
-        int[] result = Spinner.spinArray(input, spin);
+        int[] result = Spinner.spinArrayTvv01(input, spin);
         assertArrayEquals(expected, result);
     }
     @Test
@@ -35,7 +35,7 @@ class SpinnerTest {
         int[] input = new int[] {1,2,3,4,5,6,7,8,9};
         int[] expected = new int[] {8,9,1,2,3,4,5,6,7};
         int spin = 2;
-        int[] result = Spinner.spinArray(input, spin);
+        int[] result = Spinner.spinArrayTvv01(input, spin);
         assertArrayEquals(expected, result);
     }
     @Test
@@ -43,7 +43,7 @@ class SpinnerTest {
         int[] input = new int[] {1,2,3,4,5};
         int[] expected = new int[] {3,4,5,1,2};
         int spin = 8;
-        int[] result = Spinner.spinArray(input, spin);
+        int[] result = Spinner.spinArrayTvv01(input, spin);
         assertArrayEquals(expected, result);
     }
 }

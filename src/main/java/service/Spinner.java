@@ -3,7 +3,7 @@ package service;
 public class Spinner {
 
     //Implement method that spins provided int array n positions.
-    public static int[] spinArray(int[] array, int n) {
+    public static int[] spinArrayTvv01(int[] array, int n) {
 
         int arrayLength = array.length;
         n = n % arrayLength;
